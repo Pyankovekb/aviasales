@@ -1,0 +1,174 @@
+@import '~bootstrap/scss/bootstrap'
+@import '_fonts.sass'
+
+@keyframes opacity-item
+    0%
+        opacity: 1
+        height: 18px
+    50%
+        opacity: 0
+        height: 20px
+    100%
+        opacity: 1
+        height: 18px
+
+label
+    margin-bottom: 0
+p
+    margin: 0
+    
+body
+    background-color: #f3f7fa
+.header
+    height: 20vh
+#hiddenLoader
+    opacity: 0
+    transition: 1s ease
+.loader
+    margin: 80px auto
+    width: 90px
+
+    div
+        margin: 5px 0
+        text-transform: uppercase
+        text-align: center
+        font-family: 'Arial', sans-serif
+        font-size: 12px
+        letter-spacing: 4px
+        
+    .line
+        width: 2px
+        height: 20px
+        background-color: rgb(33, 150, 243)
+        margin-left: 1px
+        display: inline-block
+        animation: opacity-item 1000ms infinite ease-in-out 
+    .line-1
+        animation-delay: 1200ms
+    .line-2
+        animation-delay: 1000ms
+    .line-3
+        animation-delay: 800ms
+    .line-4
+        animation-delay: 600ms
+    .line-5
+        animation-delay: 400ms
+    .line-6
+        animation-delay: 200ms
+    .line-7
+        animation-delay: 200ms
+    .line-8
+        animation-delay: 400ms
+    .line-9
+        animation-delay: 600ms
+    .line-10
+        animation-delay: 800ms
+    .line-11
+        animation-delay: 1000ms
+    .line-12
+        animation-delay: 1200ms
+.main
+    
+.menu
+    position: sticky
+    top: 10vh
+    background-color: #ffffff
+    border-radius: 3px
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
+    height: 45vh
+    p
+        padding: 10px 15px
+input[type=radio]
+    display: none
+form.curr
+    width: 100%
+    padding: 0 15px
+    margin-bottom: 10px
+
+.btn-outline-primary 
+    border-color: #d2d5d6
+    &:hover, &:focus 
+        background-color: rgba(33, 150, 243, 0.2)
+        color: #2196f3
+
+
+.stops
+    width: 100%
+    margin-bottom: 10px
+    label
+        width: 100%
+        display: inline-block
+        cursor: pointer
+        position: relative
+        padding-left: 45px
+        font-size: 16px
+        height: 35px
+        line-height: 32px
+        &:hover
+            background-color: rgba(33, 150, 243, 0.2)
+        &:before
+            content: ''
+            display: inline-block
+
+            width: 19px
+            height: 19px
+            position: absolute
+            left: 15px
+            bottom: 8px
+            margin-right: 10px
+            border: 1px solid #d2d5d6
+            border-radius: 3px
+        span
+            float: right
+            margin-right: 15px
+            position: abolute
+            color: rgb(33, 150, 243)
+            &.hidden
+                display: none
+        
+input[type=checkbox]
+    display: none
+    &:checked + label:before
+        content: '\2713'
+        font-size: 13px
+        line-height: 19px
+        text-align: center
+        color: rgb(33, 150, 243)
+        border-color: rgb(33, 150, 243)
+    &:checked + label
+        background-color: rgba(33, 150, 243, 0.2)
+.ticket
+    background-color: #ffffff
+    border-radius: 3px
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
+    margin-bottom: 15px
+    .pricing
+        width: 100%
+        padding: 20px
+        text-align: center
+        img
+            max-width: 80%
+        button
+            width: 100%
+            margin: 20px 0
+        border-right: 2px solid #f3f7fa
+.flight
+    padding: 20px
+    .transfer:before
+        content: ''
+        display: block
+        position: absolute
+        border-bottom: 1px solid #d2d5d6
+        width: 150px
+        left: -25px
+        top: 30px
+    .transfer:after
+        content: url('/icons/plane.png')
+        position: absolute
+        background-size: cover
+        right: 35px
+        top: 20px
+        transform: rotate(45deg)
+        
+
+@import '_media.sass'
