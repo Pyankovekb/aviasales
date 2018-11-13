@@ -16,7 +16,7 @@ $('#stops').change(function(){
         },
 
         complete: function(){
-            $('#ticket').empty().hide().fadeIn('slow');
+            $('#ticket').empty();
             setTimeout(() => {                      // задержка для эмитации загрузки
                 ticketList.filter(function(item){
                     let stops = item.stops;
