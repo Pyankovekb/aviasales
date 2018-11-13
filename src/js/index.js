@@ -210,13 +210,13 @@ function render(item) {
 // функция форматирования даты
 function dateFormat (date) {
     let newDate = new Date(date);
-    let formatter = new Intl.DateTimeFormat('ru', {
+    let options = {
         day: 'numeric',
         weekday: 'short',
         year: 'numeric',
         month: 'short',
-    })
-    return formatter.format(newDate);
+    }
+    return newDate.toLocaleString('ru', options);
 };
 
 
