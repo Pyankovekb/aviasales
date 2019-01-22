@@ -6481,7 +6481,7 @@ input[type=checkbox] {
     left: -25px;
     top: 30px; }
   .flight .transfer:after {
-    content: url("/icons/plane.png");
+    content: url("/img/plane.png");
     position: absolute;
     background-size: cover;
     right: 35px;
